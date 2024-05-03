@@ -51,9 +51,8 @@ chmod +x minikube-linux-amd64
 ```bash
 minikube start 
 ```
+
 ![prom1](https://github.com/shazamohmd/Prometheus-Project-/assets/161209672/b4d73097-399a-4873-afc6-ed673c691891)
-
-
 
 ## Install Helm 
 1. Download Helm installation script
@@ -107,11 +106,14 @@ kubectl expose service grafana -- type=NodePort -- target-port=3000 -- name=graf
 ```bash
 kubectl get secret --namespace default grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
 ```
+![prom6](https://github.com/shazamohmd/Prometheus-Project-/assets/161209672/16bddc59-355a-4182-934d-8597c859a2d7)
 
 ## Conclusion 
 
 In conclusion, this project installed and configured key tools like Docker, Kubectl, Minikube, Helm, Prometheus, and Grafana to enable effective monitoring of our Kubernetes environment. By utilizing Prometheus and Grafana, we were able to collect, store, and visualize metrics from our Kubernetes cluster, gaining valuable insights into its performance, resource utilization, and overall health. This setup allows us to monitor and troubleshoot issues promptly, ensuring the dependability and stability of our Kubernetes workloads.
+
 ![prom7](https://github.com/shazamohmd/Prometheus-Project-/assets/161209672/a2ee6d5c-15b5-4294-b565-bf58236c1d03)
+
 ![g1](https://github.com/shazamohmd/Prometheus-Project-/assets/161209672/5bcf5c97-62c1-47cc-9e19-929b628ed095)
 
 
